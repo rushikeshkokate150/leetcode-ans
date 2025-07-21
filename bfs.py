@@ -22,3 +22,37 @@ graph = {
 
 
 bfs(graph, 'A')
+
+# from collections import deque
+# # Definition for a binary tree node.
+# # class TreeNode(object):
+# #     def _init_(self, val=0, left=None, right=None):
+# #         self.val = val
+# #         self.left = left
+# #         self.right = right
+
+# class Solution(object):
+#     def levelOrder(self, root):
+#         """
+#         :type root: Optional[TreeNode]
+#         :rtype: List[List[int]]
+#         """
+#         ans = []
+#         if not root:
+#             return ans
+
+#         q = deque([root])
+        
+#         while q:
+#             level = []
+#             size = len(q)
+#             for i in range(size):
+#                 node = q.popleft()
+#                 level.append(node.val)
+#                 if node.left:
+#                     q.append(node.left)
+#                 if node.right:
+#                     q.append(node.right)
+#             ans.append(level)
+        
+#         return ans
